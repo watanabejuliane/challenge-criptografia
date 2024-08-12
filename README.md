@@ -38,6 +38,8 @@ Acesse o site clicando [neste link!](https://watanabejuliane.github.io/challenge
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) 
 
 ## Imagens de Demonstração
+![image](https://github.com/user-attachments/assets/4d14be81-7b96-4d56-987d-0d166749ba95)
+![image](https://github.com/user-attachments/assets/2c58c100-a4b6-4edc-94ea-7f66eb659150)
 
 
  **Feito com ♥**: Juliane Watanabe
