@@ -1,8 +1,7 @@
-
 body {
     font-family: "Quicksand", sans-serif;
     background-image: url('https://i.pinimg.com/originals/a3/4a/5f/a34a5f5dec28640113231b51db6f726b.png'); 
-    background-size:cover;
+    background-size: cover;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -14,17 +13,16 @@ body {
     background-color: rgba(215, 223, 255, 0.9);
     overflow: hidden;
     display: flex;
-    flex-direction: inline;
+    flex-direction: row; /* Manter inline */
     width: 100%;
-    max-width: 900px;*/
+    max-width: 900px;
     padding: 40px;
 }
 
-
 .input-area, .output-area {
     padding: 50px;
+    flex: 1; /* Permitir que as áreas input e output se ajustem lado a lado */
 }
-
 
 .input-area h1 {
     font-size: 2em; 
@@ -33,9 +31,16 @@ body {
     text-align: center;
 }
 
-.nota {
- font-size: small;
- margin-left: 20px;
+.text-info {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 10px 20px;
+}
+
+.nota, .char-counter {
+    font-size: small;
+    color: #656565;
 }
 
 textarea {
@@ -70,26 +75,25 @@ button {
     transition: background-color 0.3s ease;
 }
 
-button#decrypt-button {
+button#descriptar-button {
     background-color: #89c196;
 }
 
-button#reset-button {
+button#resetar-button {
     background-color: #e7a3cb;
 }
-
 
 button:hover {
     background-color: #7fabdd; 
     color: rgb(221, 221, 221);
 }
 
-button#decrypt-button:hover {
+button#descriptar-button:hover {
     background-color: #64b074;
     color: rgb(221, 221, 221);
 }
 
-button#reset-button:hover {
+button#resetar-button:hover {
     background-color: #d191cb;
     color: rgb(221, 221, 221);
 }
@@ -98,17 +102,23 @@ button#reset-button:hover {
     background-color: #fcfbff;
     padding: 20px;
     text-align: center;
+    max-width: 100%;
+    overflow-x: auto;
 }
 
-
-.default-message {
-    font-size: 1.2em; 
+.padrao-message, .output-message {
+    font-size: 1.2em;
     color: #777588;
+    word-break: normal;
+    white-space: normal;
+    margin: 0; 
 }
 
 .output-message {
+    margin-top: 30%;
     font-size: 1.5em;
-    color: #656565;;
+    color: #656565;
+    word-wrap: break-word;
 }
 
 .hidden {

@@ -13,18 +13,22 @@
 <body>
     <div class="container">
         <div class="input-area">
-            <h1>Digite seu texto para Criptografar ou Descriptografar </h1>
-            <textarea id="input-text" placeholder="Digite seu texto aqui..."></textarea>
-            <p class="nota">Apenas letras minúsculas e sem acentos.</p>
+            <h1>Escreva um texto para Criptografar ou Descriptografar</h1>
+            <textarea id="input-text" placeholder="Digite seu texto aqui..." maxlength="100"></textarea>
+            <div class="text-info">
+                <p class="nota">Letras minúsculas, sem acentos.</p>
+                <p class="char-counter">0/100 caracteres</p>
+            </div>
+            
             <div class="buttons">
-                <button id="encrypt-button">Criptografar</button>
-                <button id="decrypt-button">Descriptografar</button>
-                <button id="reset-button">Resetar</button>
+                <button id="encriptar-button">Criptografar</button>
+                <button id="descriptar-button">Descriptografar</button>
+                <button id="resetar-button">Resetar</button>
             </div>
            
         </div>
         <div class="output-area" id="output-area">
-            <p class="default-message">Nenhuma mensagem encontrada</p>
+            <p class="padrao-message">Nenhuma mensagem encontrada</p>
             <p class="output-message">Digite um texto que você deseja criptografar ou descriptografar.</p>
         </div>
     </div>
