@@ -69,8 +69,8 @@ document.getElementById('descriptar-button').addEventListener('click', () => {
 // Atualiza o contador de caracteres
 document.getElementById('input-text').addEventListener('input', () => {
     const inputText = document.getElementById('input-text').value;
-    const charCounter = document.getElementById('char-counter');
-    const maxLength = 255; // Atualize o valor máximo conforme necessário
+    const charCounter = document.querySelector('.char-counter'); // Atualize aqui
+    const maxLength = 100; // Atualize o valor máximo conforme necessário
 
     charCounter.textContent = `${inputText.length}/${maxLength} caracteres`;
 
@@ -86,6 +86,7 @@ document.getElementById('input-text').addEventListener('input', () => {
         outputMessage.style.display = 'block';
     }
 });
+
 
 // Função para resetar os campos
 document.getElementById('resetar-button').addEventListener('click', () => {
